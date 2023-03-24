@@ -56,7 +56,6 @@ export class Service {
     this._pusher = new Pusher('elytica_service', {
       httpHost: `${this._channel_auth}`,
       wsHost: `${this._wshost}`,
-      wsPath: '/app',
       enabledTransports: ['ws', 'wss'],
       channelAuthorization: {
         endpoint: `${this._scheme}${this._channel_auth}/broadcasting/auth`,
